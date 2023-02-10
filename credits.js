@@ -47,8 +47,7 @@ displayPalette.style.color = 'rgba(255, 255, 255, 0.75)';
 displayPalette.style.zIndex = '999999';
 var linkSMPTE = document.createElement("a");
 //linkSMPTE.href = "#";
-linkSMPTE.onClick = "toggleFullScreen();"
-linkSMPTE.textContent = "fullscreen";
+linkSMPTE.textContent = "1983";
 linkSMPTE.target="_blank"
 linkSMPTE.style.fontSize = '12px';
 linkSMPTE.style.fontFamily = 'Arial, Helvetica, sans-serif';
@@ -92,18 +91,3 @@ displayYear.style.color = 'rgba(255, 255, 255, 0.75)';
 displayYear.style.zIndex = '999999';
 displayYear.textContent = '2023';
 document.body.appendChild(displayYear);
-
-function toggleFullScreen() {
-   var doc = window.document;
-   var docEl = doc.documentElement;
-
-   var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
-   var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
-
-   if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
-       requestFullScreen.call(docEl);
-   }
-   else {
-       cancelFullScreen.call(doc);
-   }
-}
