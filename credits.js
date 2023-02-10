@@ -45,15 +45,7 @@ displayPalette.style.fontSize = '12px';
 displayPalette.style.fontFamily = 'Arial, Helvetica, sans-serif';
 displayPalette.style.color = 'rgba(255, 255, 255, 0.75)';
 displayPalette.style.zIndex = '999999';
-var linkSMPTE = document.createElement("a");
-//linkSMPTE.href = "#";
-linkSMPTE.textContent = "1983";
-linkSMPTE.target="_blank"
-linkSMPTE.style.fontSize = '12px';
-linkSMPTE.style.fontFamily = 'Arial, Helvetica, sans-serif';
-linkSMPTE.style.color = 'rgba(255, 255, 255, 0.75)';
-linkSMPTE.style.textDecoration = 'none';
-displayPalette.appendChild(linkSMPTE);
+displayPalette.textContent = "spacescape";
 document.body.appendChild(displayPalette);
 
 const displayCredit = document.createElement('div');
