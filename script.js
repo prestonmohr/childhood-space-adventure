@@ -63,6 +63,8 @@ function init() {
         "image1.webp",
         "image2.webp",
         "image3.webp",
+        "image4.webp",
+        "image5.webp"
         // add more images here as needed
     ];
     const randomIndex = Math.floor(Math.random() * images.length);
